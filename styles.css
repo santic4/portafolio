@@ -1,0 +1,290 @@
+/* Estilos generales */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.426), rgba(255, 255, 255, 1)), url('./fotos/backgroundPortafolio.png');
+  background-size: contain;
+  background-repeat: repeat;
+  color: #333;
+}
+
+/* Estilos del encabezado */
+header {
+  background-color: #222;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+}
+
+header h1 {
+  color: #ff6b6b;
+  font-size: 3rem;
+  margin: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ff6b6b;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #007bff;
+}
+
+/* Estilos de la sección "Sobre mí" */
+#about {
+  background-color: #ffefbf00;
+  padding: 20px 0;
+  margin: 5px;
+  text-align: center;
+}
+
+.sobreMi {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Estilos de la sección "Servicios" */
+#services {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.service {
+  background-color: #ffefbf87;
+  color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.service h3 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  color: #ff6b6b;
+}
+
+/* Estilos del portafolio */
+#portafolio {
+  background-color: #ffefbf00;
+  padding: 20px 0 40px 0px;
+
+  text-align: center;
+}
+
+/* Estilos para el contenedor de proyectos */
+.contenedorPadre {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction:row;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Estilos para los proyectos individuales */
+.proyectos {
+  width: calc(50% - 20px);
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  background-color: #f9f9f9;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+#services div{
+  transition: transform 0.3s ease-in-out;
+}
+
+#services div:hover {
+  transform: scale(1.2);
+}
+
+
+/* Estilos para el GIF animado y capa de superposición */
+.gifContainer {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.gift {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  
+}
+
+/* Estilos para los iconos de lenguajes y tecnologías */
+.iconsLenguajes img {
+  width: 50px;
+  height: auto;
+  margin: 15px 20px;
+}
+
+.iconsSocial{
+  background-color: #f2f2f2; 
+  padding: 10px; 
+  border-radius: 5px; 
+  margin-top: 15px; 
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.011);
+}
+
+/* Estilos para los iconos de redes sociales */
+.iconsSocial img {
+  width: 70px;
+  height: auto;
+  margin: 10px 60px;
+  cursor: pointer;
+}
+
+/* Estilos generales para los iconos */
+.iconsLenguajes img, .iconsSocial img {
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Efecto de aumento al pasar el mouse sobre los iconos */
+.iconsLenguajes img:hover, .iconsSocial img:hover {
+  transform: scale(1.2);
+}
+
+/* Estilos para la capa de superposición */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Color y opacidad de la capa */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+ 
+  backdrop-filter: blur(5px); 
+  
+}
+
+/* Estilos para el mensaje */
+.overlay a{
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.8); 
+  padding: 10px 20px; 
+  border-radius: 5px; 
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Mostrar la capa al pasar el mouse */
+.gifContainer:hover .overlay {
+  opacity: 1;
+}
+
+
+/* Estilos de la sección "Contacto" */
+.contact-section {
+  background-color: #f5f5f5;
+  padding: 40px;
+  text-align: center;
+}
+
+.form-container {
+  max-width: 500px;
+  margin: 20px auto;
+  transform: translatex(10px);
+  background-color: white;
+  padding: 30px 40px 20px 20px;
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.136);
+}
+
+.contactTittle{
+  margin-top: -10px;
+  margin-bottom: 50px;
+ } 
+
+.form-container label {
+  margin-bottom: 10px;
+  font-weight: bold;
+  display: block;
+}
+
+.form-container input,
+.form-container textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  width: 100%;
+  resize: vertical;
+}
+
+.form-container button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+
+.social-logo {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 0 0px 0;
+  height: auto;
+}
+
+.social-logo img{
+  width: 150px;
+  height: auto;
+}
+
+.lkdLogo{
+  transform: translatey(20px);
+}
+
+.form-container button:hover {
+  background-color: #0056b3; 
+}
+
+#message{
+  height: 200px;
+}
+
+/* Estilos del pie de página */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+
