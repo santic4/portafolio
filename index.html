@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +8,11 @@
 </head>
 <body>
   <header>
-    <h1>Desarrollador Full Stack</h1>
-    
+    <h1>PORTAFOLIO</h1>
     <nav>
       <ul>
-        <li><a href="#about">Sobre mí</a></li>
         <li><a href="#services">Servicios</a></li>
+        <li><a href="#certificacionesId">Certificados</a></li>
         <li><a href="#portafolio">Portafolio</a></li>
         <li><a href="#contact">Contacto</a></li>
       </ul>
@@ -22,11 +21,7 @@
 
   <main>
 
-  <section id="about">
-    <h2>Sobre mí</h2>
-    <p class="sobreMi">¡Hola! Soy Santiago Cañu y soy un desarrollador Full Stack apasionado por crear sitios web hermosos y funcionales. Soy un apasionado desarrollador web con experiencia en el desarrollo front-end y back-end. Mi objetivo es crear soluciones web innovadoras y funcionales que brinden una excelente experiencia al usuario. Me especializo en tecnologías como HTML, CSS, JavaScript y frameworks como React y Node.js. También tengo experiencia en bases de datos y manejo de versiones con Git. Con una sólida formación en programación y un enfoque en el desarrollo web, estoy siempre buscando oportunidades para crecer y aprender nuevas tecnologías. Siempre estoy dispuesto a asumir nuevos desafíos y colaborar en proyectos emocionantes. Me apasiona trabajar en equipo y estoy comprometido a entregar resultados de alta calidad. Si estás buscando un desarrollador web dedicado y entusiasta, no dudes en contactarme.</p>
-  </section>
-
+  
   <section id="services">
     <h2>Servicios</h2>
     <div class="service">
@@ -43,9 +38,35 @@
     </div>
   </section>
 
+  <h2 class="seccion-titulo">Certificaciones</h2>
+
+  <section id="certificacionesId" class="certificaciones">
+    
+    <div class="certificacion">
+        <h3>Curso de Desarrollo Web</h3>
+        <p>Certificado en HTML, CSS</p>
+        <a href="enlace_al_certificado_html_css_javascript">Ver Certificado</a>
+    </div>
+    <div class="certificacion">
+      <h3>Curso de JavaScript</h3>
+      <p>Certificado JavaScript</p>
+      <a href="enlace_al_certificado_html_css_javascript">Ver Certificado</a>
+  </div>
+    <div class="certificacion">
+        <h3>Curso de React</h3>
+        <p>Certificado en React</p>
+        <a href="enlace_al_certificado_react">Ver Certificado</a>
+    </div>
+    <div class="certificacion">
+        <h3>Carrera de Desarrollo Front End React</h3>
+        <p>Certificado en Desarrollo Front End React</p>
+        <a href="enlace_al_certificado_front_end_react">Ver Certificado</a>
+    </div>
+</section>
+
   <section id="portafolio">
 
-    <h2>Portafolio</h2>
+    <h2 class="h2Porta">Portafolio</h2>
 
     <div class="contenedorPadre">
 
@@ -103,10 +124,10 @@
   <h2 class="contactTittle">Contacto</h2>
   <div class="form-container">
       <form action="https://formspree.io/f/xknlrvqa" method="POST">
-          <label for="email">Tu correo:</label>
+          <label for="email">Correo Electrónico</label>
           <input type="email" id="email" name="email" required>
           
-          <label for="message">Tu mensaje:</label>
+          <label for="message">Escribe un mensaje</label>
           <textarea id="message" name="message" required></textarea>
           
           <button type="submit">Enviar</button>
@@ -114,7 +135,7 @@
   </div>
   
   <div class="social-logo">
-  <a href="https://github.com/santic4" target="_blank"><img src="./fotos/GitHubLogo.png" alt="ghlogo"></a>
+  <a class="gitLogo" href="https://github.com/santic4" target="_blank"><img src="./fotos/GitHubLogo.png" alt="ghlogo"></a>
   <a href="https://www.linkedin.com/in/santiago-ca%C3%B1u-3058ba152/" target="_blank"><img src="./fotos/linkedinLogo.webp" alt="lklogo" class="lkdLogo"></a>
   </div>
 </section>

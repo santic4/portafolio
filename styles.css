@@ -3,24 +3,28 @@ body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.426), rgba(255, 255, 255, 1)), url('./fotos/backgroundPortafolio.png');
   background-size: contain;
   background-repeat: repeat;
   color: #333;
+  background-color: #101010;
 }
 
 /* Estilos del encabezado */
 header {
-  background-color: #222;
   text-align: center;
   padding: 20px 0;
   width: 100%;
+  height: 600px;
+  background-image: url('./fotos/presentacionPorta.png');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-header h1 {
-  color: #ff6b6b;
-  font-size: 3rem;
-  margin: 10px;
+h1{
+  text-shadow: 2px 2px 4px rgba(38, 38, 38, 0.5);
+  padding: 10px;
+  font-weight: bold;
+  font-size:48px;
 }
 
 nav ul {
@@ -41,23 +45,10 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #007bff;
+  color: #f5f5f5;
 }
 
-/* Estilos de la sección "Sobre mí" */
-#about {
-  background-color: #ffefbf00;
-  padding: 20px 0;
-  margin: 5px;
-  text-align: center;
-}
 
-.sobreMi {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  max-width: 1000px;
-  margin: 0 auto;
-}
 
 /* Estilos de la sección "Servicios" */
 #services {
@@ -66,7 +57,7 @@ nav ul li a:hover {
 }
 
 .service {
-  background-color: #ffefbf87;
+  background-color: #FFD700;
   color: #333;
   padding: 20px;
   border-radius: 10px;
@@ -74,18 +65,73 @@ nav ul li a:hover {
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-
 .service h3 {
   font-size: 1.5rem;
   margin-top: 0;
-  color: #ff6b6b;
+  color: #0077B5;
+  
+}
+
+/* Estilos para la sección de certificaciones */
+.certificaciones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #f9f9f900;
+}
+
+/* Estilos para cada contenedor de certificación */
+.certificacion {
+  width: calc(25% - 20px);
+  margin: 50px;
+  padding: 20px;
+  border-radius: 50%;
+  background-color: #FFD700;
+  color: #333333; 
+  box-shadow: 2px 2px 5px #0076b57a;
+  text-align: center;
+  transition: transform 0.15s ease-in-out;
+}
+
+.certificacion:hover {
+  transform: scale(1.03);
+}
+
+/* Estilos para los títulos de certificación */
+body h2 {
+  font-size: 24px;
+  margin: 20px 0px;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.seccion-titulo {
+  background-color: #f5f5f500;
+}
+
+/* Estilos para los párrafos de certificación */
+.certificacion p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+/* Estilos para los enlaces de certificación */
+.certificacion a {
+  color: #0077B5; 
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+.certificacion a:hover {
+  text-decoration: underline;
 }
 
 /* Estilos del portafolio */
 #portafolio {
-  background-color: #ffefbf00;
+  background-color: #FFD700;
   padding: 20px 0 40px 0px;
-
   text-align: center;
 }
 
@@ -94,7 +140,7 @@ nav ul li a:hover {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
-  flex-direction:row;
+  flex-direction: row;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -110,14 +156,13 @@ nav ul li a:hover {
   transition: transform 0.3s ease-in-out;
 }
 
-#services div{
+#services div {
   transition: transform 0.3s ease-in-out;
 }
 
 #services div:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
-
 
 /* Estilos para el GIF animado y capa de superposición */
 .gifContainer {
@@ -133,7 +178,10 @@ nav ul li a:hover {
   margin: 0 auto;
   position: relative;
   z-index: 1;
-  
+}
+
+.h2Porta{
+  color: #333333;
 }
 
 /* Estilos para los iconos de lenguajes y tecnologías */
@@ -143,12 +191,11 @@ nav ul li a:hover {
   margin: 15px 20px;
 }
 
-.iconsSocial{
-  background-color: #f2f2f2; 
-  padding: 10px; 
-  border-radius: 5px; 
-  margin-top: 15px; 
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.011);
+.iconsSocial {
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 15px;
 }
 
 /* Estilos para los iconos de redes sociales */
@@ -157,16 +204,17 @@ nav ul li a:hover {
   height: auto;
   margin: 10px 60px;
   cursor: pointer;
+  color: #f9f9f9;
 }
 
-/* Estilos generales para los iconos */
-.iconsLenguajes img, .iconsSocial img {
+.iconsLenguajes img,
+.iconsSocial img {
   transition: transform 0.3s ease-in-out;
 }
 
-/* Efecto de aumento al pasar el mouse sobre los iconos */
-.iconsLenguajes img:hover, .iconsSocial img:hover {
-  transform: scale(1.2);
+.iconsLenguajes img:hover,
+.iconsSocial img:hover {
+  transform: scale(1.1);
 }
 
 /* Estilos para la capa de superposición */
@@ -176,27 +224,25 @@ nav ul li a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7); /* Color y opacidad de la capa */
+  background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   justify-content: center;
   align-items: center;
   opacity: 0;
   transition: opacity 0.3s ease;
   z-index: 2;
- 
-  backdrop-filter: blur(5px); 
-  
+  backdrop-filter: blur(5px);
 }
 
 /* Estilos para el mensaje */
-.overlay a{
+.overlay a {
   color: white;
   font-size: 18px;
   text-align: center;
   margin: 0;
-  background-color: rgba(0, 0, 0, 0.8); 
-  padding: 10px 20px; 
-  border-radius: 5px; 
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px 20px;
+  border-radius: 5px;
   text-decoration: none;
   cursor: pointer;
 }
@@ -206,10 +252,9 @@ nav ul li a:hover {
   opacity: 1;
 }
 
-
 /* Estilos de la sección "Contacto" */
 .contact-section {
-  background-color: #f5f5f5;
+  
   padding: 40px;
   text-align: center;
 }
@@ -223,10 +268,10 @@ nav ul li a:hover {
   box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.136);
 }
 
-.contactTittle{
+.contactTittle {
   margin-top: -10px;
   margin-bottom: 50px;
- } 
+}
 
 .form-container label {
   margin-bottom: 10px;
@@ -245,13 +290,13 @@ nav ul li a:hover {
 }
 
 .form-container button {
-  background-color: #007bff;
+  background-color: #0077B5; 
   color: white;
   border: none;
   border-radius: 4px;
   padding: 10px;
   cursor: pointer;
-  transition: background-color 0.3s ease; 
+  transition: background-color 0.3s ease;
 }
 
 .social-logo {
@@ -262,29 +307,27 @@ nav ul li a:hover {
   height: auto;
 }
 
-.social-logo img{
+.social-logo img {
   width: 150px;
   height: auto;
 }
 
-.lkdLogo{
+.lkdLogo {
   transform: translatey(20px);
 }
 
 .form-container button:hover {
-  background-color: #0056b3; 
+  background-color: #085b88;
 }
 
-#message{
+#message {
   height: 200px;
 }
 
 /* Estilos del pie de página */
 footer {
-  background-color: #222;
   color: white;
   text-align: center;
-  padding: 20px 0;
+  padding: 5px 0;
+  margin-bottom: 20px;
 }
-
-
