@@ -1,4 +1,4 @@
-/* Estilos generales */
+
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
@@ -7,9 +7,9 @@ body {
   background-repeat: repeat;
   color: #333;
   background-color: #101010;
+ 
 }
 
-/* Estilos del encabezado */
 header {
   text-align: center;
   padding: 20px 0;
@@ -20,11 +20,23 @@ header {
   background-repeat: no-repeat;
 }
 
+#check-menu {
+  display: none;
+}
+  
+.menu{
+  display: none;
+  font-size: 3rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+
 h1{
   text-shadow: 2px 2px 4px rgba(38, 38, 38, 0.5);
   padding: 10px;
   font-weight: bold;
   font-size:48px;
+  color: #FFD700;
 }
 
 nav ul {
@@ -44,13 +56,11 @@ nav ul li a {
   font-weight: bold;
 }
 
+
 nav ul li a:hover {
   color: #5c95c0;
 }
 
-
-
-/* Estilos de la sección "Servicios" */
 #services {
   padding: 20px 0;
   text-align: center;
@@ -72,7 +82,6 @@ nav ul li a:hover {
   
 }
 
-/* Estilos para la sección de certificaciones */
 .certificaciones {
   display: flex;
   flex-wrap: wrap;
@@ -80,7 +89,6 @@ nav ul li a:hover {
   background-color: #f9f9f900;
 }
 
-/* Estilos para cada contenedor de certificación */
 .certificacion {
   width: calc(25% - 20px);
   margin: 50px;
@@ -97,7 +105,6 @@ nav ul li a:hover {
   transform: scale(1.03);
 }
 
-/* Estilos para los títulos de certificación */
 body h2 {
   font-size: 24px;
   margin: 20px 0px;
@@ -109,13 +116,11 @@ body h2 {
   background-color: #f5f5f500;
 }
 
-/* Estilos para los párrafos de certificación */
 .certificacion p {
   font-size: 16px;
   margin: 10px 0;
 }
 
-/* Estilos para los enlaces de certificación */
 .certificacion a {
   color: #0077B5; 
   text-decoration: none;
@@ -128,14 +133,12 @@ body h2 {
   text-decoration: underline;
 }
 
-/* Estilos del portafolio */
 #portafolio {
   background-color: #FFD700;
   padding: 20px 0 40px 0px;
   text-align: center;
 }
 
-/* Estilos para el contenedor de proyectos */
 .contenedorPadre {
   display: flex;
   justify-content: space-between;
@@ -145,7 +148,6 @@ body h2 {
   margin: 0 auto;
 }
 
-/* Estilos para los proyectos individuales */
 .proyectos {
   width: calc(50% - 20px);
   border: 1px solid #ccc;
@@ -164,7 +166,6 @@ body h2 {
   transform: scale(1.1);
 }
 
-/* Estilos para el GIF animado y capa de superposición */
 .gifContainer {
   position: relative;
   display: inline-block;
@@ -184,7 +185,6 @@ body h2 {
   color: #333333;
 }
 
-/* Estilos para los iconos de lenguajes y tecnologías */
 .iconsLenguajes img {
   width: 50px;
   height: auto;
@@ -198,7 +198,6 @@ body h2 {
   margin-top: 15px;
 }
 
-/* Estilos para los iconos de redes sociales */
 .iconsSocial img {
   width: 70px;
   height: auto;
@@ -217,7 +216,6 @@ body h2 {
   transform: scale(1.1);
 }
 
-/* Estilos para la capa de superposición */
 .overlay {
   position: absolute;
   top: 0;
@@ -234,7 +232,6 @@ body h2 {
   backdrop-filter: blur(5px);
 }
 
-/* Estilos para el mensaje */
 .overlay a {
   color: white;
   font-size: 18px;
@@ -247,12 +244,11 @@ body h2 {
   cursor: pointer;
 }
 
-/* Mostrar la capa al pasar el mouse */
 .gifContainer:hover .overlay {
   opacity: 1;
 }
 
-/* Estilos de la sección "Contacto" */
+/*CONTACTO*/
 .contact-section {
   
   padding: 40px;
@@ -324,10 +320,12 @@ body h2 {
   height: 200px;
 }
 
-/* Estilos del pie de página */
+/*FOOTER*/
+
 footer {
   color: white;
   text-align: center;
   padding: 5px 0;
   margin-bottom: 20px;
 }
+
