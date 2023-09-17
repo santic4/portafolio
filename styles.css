@@ -6,60 +6,110 @@ body {
   background-size: contain;
   background-repeat: repeat;
   color: #333;
-  background-color: #101010;
+  background-color: whitesmoke;
  
 }
 
-header {
-  text-align: center;
-  padding: 20px 0;
-  width: 100%;
-  height: 600px;
-  background-image: url('./fotos/presentacionPorta.png');
-  background-size: cover;
-  background-repeat: no-repeat;
+nav {
+  background-color: #0077B5;
+  padding: 10px 0;
 }
 
-#check-menu {
-  display: none;
-}
+.navbar {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   
-.menu{
+}
+
+.logo h1 {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.logo{
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+}
+.mobile-menu-toggle {
+  width: calc(33% - 5px);
   display: none;
-  font-size: 3rem;
-  color: #ffffff;
+  flex-direction: column;
   cursor: pointer;
 }
 
-h1{
-  text-shadow: 2px 2px 4px rgba(38, 38, 38, 0.5);
-  padding: 10px;
-  font-weight: bold;
-  font-size:48px;
-  color: #FFD700;
+.mobile-menu-toggle.clicked {
+  animation: chill 0.5s ease infinite alternate; /* Agregamos una animación para el efecto "chill" */
 }
 
-nav ul {
+@keyframes chill {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(5deg); /* Ajusta el ángulo de la oscilación según tus preferencias */
+  }
+}
+
+.mobile-menu-toggle span {
+  background-color: #fff;
+  height: 2px;
+  width: 25px;
+  margin: 3px 0;
+  transition: background-color 0.3s ease; /* Agregamos una transición para cambiar el color de fondo suavemente */
+}
+.nav-links {
+  width: calc(33% - 20px);
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
 }
 
-nav ul li {
-  display: inline;
+.nav-links li {
   margin-right: 20px;
 }
 
-nav ul li a {
+.nav-links li:last-child {
+  margin-right: 0;
+}
+
+.nav-links a {
   text-decoration: none;
-  color: #ffffff;
-  font-weight: bold;
+  color: #fff;
+  transition: color 0.3s;
 }
 
-
-nav ul li a:hover {
-  color: #5c95c0;
+.nav-links a:hover {
+  color: #00aaff;
 }
+
+.button-container {
+  display: flex;
+  width: 33%;
+  justify-content: end;
+}
+
+.descargar-btn {
+  background-color: #00aaff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.descargar-btn:hover {
+  background-color: #0077cc;
+}
+
 
 #services {
   padding: 20px 0;
@@ -67,19 +117,23 @@ nav ul li a:hover {
 }
 
 .service {
-  background-color: #FFD700;
+  background-color: #c8c8c800;
   color: #333;
   padding: 20px;
   border-radius: 10px;
   margin: 20px 0;
+  margin-top: 50px;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+.service p{
+  font-size: 15px;
+}
+
 .service h3 {
-  font-size: 1.5rem;
+  font-size: 18px;
   margin-top: 0;
   color: #0077B5;
-  
 }
 
 .certificaciones {
@@ -87,18 +141,21 @@ nav ul li a:hover {
   flex-wrap: wrap;
   justify-content: space-around;
   background-color: #f9f9f900;
+  margin: 50px 20px;
 }
 
 .certificacion {
-  width: calc(25% - 20px);
-  margin: 50px;
+  width: calc(20% - 50px);
   padding: 20px;
-  border-radius: 50%;
-  background-color: #FFD700;
+  background-color: #ffffff55;
   color: #333333; 
   box-shadow: 2px 2px 5px #0076b57a;
   text-align: center;
   transition: transform 0.15s ease-in-out;
+}
+
+.certificacion h3{
+  font-size: 18px;
 }
 
 .certificacion:hover {
@@ -106,10 +163,10 @@ nav ul li a:hover {
 }
 
 body h2 {
-  font-size: 24px;
+  font-size: 20px;
   margin: 20px 0px;
   text-align: center;
-  color: whitesmoke;
+  color: #0077B5;
 }
 
 .seccion-titulo {
@@ -117,7 +174,7 @@ body h2 {
 }
 
 .certificacion p {
-  font-size: 16px;
+  font-size: 15px;
   margin: 10px 0;
 }
 
@@ -126,6 +183,7 @@ body h2 {
   text-decoration: none;
   font-weight: bold;
   display: block;
+  font-size: 15px;
   margin-top: 10px;
 }
 
@@ -134,7 +192,7 @@ body h2 {
 }
 
 #portafolio {
-  background-color: #FFD700;
+  background-color: #c8c8c800;
   padding: 20px 0 40px 0px;
   text-align: center;
 }
@@ -234,7 +292,7 @@ body h2 {
 
 .overlay a {
   color: white;
-  font-size: 18px;
+  font-size: 12px;
   text-align: center;
   margin: 0;
   background-color: rgba(0, 0, 0, 0.8);
@@ -295,6 +353,8 @@ body h2 {
   transition: background-color 0.3s ease;
 }
 
+
+
 .social-logo {
   width: 100%;
   display: flex;
@@ -323,7 +383,7 @@ body h2 {
 /*FOOTER*/
 
 footer {
-  color: white;
+  color: #0077B5;
   text-align: center;
   padding: 5px 0;
   margin-bottom: 20px;

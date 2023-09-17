@@ -18,20 +18,31 @@
 </head>
 <body>
   <header>
-    <h1>PORTAFOLIO</h1>
     <nav>
-      <input type="checkbox" id="check-menu">
+      <div class="navbar">
         
-      <label for="check-menu" class="menu" ><i class="fa-solid fa-bars" style="color: #ffffff;"></i></label>
-      <ul>
-        <li class="LiServices"><a href="#services">Servicios</a></li>
-        <li><a href="#certificacionesId">Certificados</a></li>
-        <li><a href="#portafolio">Proyectos</a></li>
-        <li><a href="#contact">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+        <div class="mobile-menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-links">
+          <li class="li-services"><a href="#services">Servicios</a></li>
+          <li><a href="#certificacionesId">Certificados</a></li>
+          <li><a href="#portafolio">Proyectos</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
 
+        <div class="logo">
+          <h1>PORTAFOLIO</h1>
+        </div>
+        
+        <div class="button-container">
+          <button class="descargar-btn" id="descargarBtn">Curriculum</button>
+          <a href="./fotos/CañuCV.pdf" download id="pdfLink" style="display: none;">PDF</a>
+        </div>
+        </nav>
+</header>
   <main>
 
   
@@ -149,7 +160,7 @@
   
   <div class="social-logo">
   <a class="gitLogo" href="https://github.com/santic4" target="_blank"><img src="./fotos/GitHubLogo.png" alt="ghlogo"></a>
-  <a href="https://www.linkedin.com/in/santiago-ca%C3%B1u-3058ba152/" target="_blank"><img src="./fotos/linkedinLogo.webp" alt="lklogo" class="lkdLogo"></a>
+  <a class="gitLogo" href="https://www.linkedin.com/in/santiago-ca%C3%B1u-3058ba152/" target="_blank"><img src="./fotos/linkedinLogo.webp" alt="lklogo" class="lkdLogo"></a>
   </div>
 </section>
 
@@ -159,5 +170,6 @@
     <p>&copy; 2023 Santiago Cañu. Todos los derechos reservados.</p>
   </footer>
  
+  <script src="./script.js"></script>
 </body>
 </html>
