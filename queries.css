@@ -8,7 +8,8 @@
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 60px;
+    top: 55px;
+    
     left: 0;
     width: 100%;
     background-color: #0077B5;
@@ -62,6 +63,15 @@
   #services {
     margin: 0;
     padding-top: 20px;
+    
+  }
+
+  #services h3{
+    font-size: 14px;
+  }
+
+  #services p{
+    font-size: 12px;
   }
 
   .certificacion {
@@ -77,8 +87,15 @@
 }
 
 @media screen and (max-width: 600px){
+
+
 .iconsLenguajes img {
-  width: 20px;
+  width: 25px;
+  margin: 10px 10px;
+ }
+
+ .iconsLenguajes h5{
+  font-size: 12px;
  }
 
  .gifContainer{
@@ -104,7 +121,7 @@
  }
 
  h1{
-  font-size: 15px;
+  font-size: 20px;
  }
  .gitLogo img{
   width: 70px;
