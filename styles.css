@@ -10,6 +10,11 @@ body {
   
 }
 
+h1{
+  display: flex;
+ justify-content: center;
+}
+
 nav {
   background-color: #0077B5;
   padding: 10px 0;
@@ -63,7 +68,7 @@ nav {
   transition: background-color 0.3s ease; /* Agregamos una transición para cambiar el color de fondo suavemente */
 }
 .nav-links {
-  width: calc(33% - 20px);
+  width: calc(33% + 3px);
   list-style: none;
   margin: 0;
   padding: 0;
@@ -73,7 +78,7 @@ nav {
 }
 
 .nav-links li {
-  margin-right: 20px;
+  margin-right: 30px;
 }
 
 .nav-links li:last-child {
@@ -99,7 +104,7 @@ nav {
 .descargar-btn {
   background-color: #00aaff;
   color: #fff;
-  padding: 10px 20px;
+  padding: 10px 10px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -166,7 +171,7 @@ body h2 {
   font-size: 20px;
   margin: 20px 0px;
   text-align: center;
-  color: #0077B5;
+  color: #333333;
 }
 
 .seccion-titulo {
@@ -244,7 +249,7 @@ body h2 {
 }
 
 .iconsLenguajes img {
-  width: 50px;
+  max-width: 40px;
   height: auto;
   margin: 15px 20px;
 }
@@ -271,7 +276,8 @@ body h2 {
 
 .iconsLenguajes img:hover,
 .iconsSocial img:hover {
-  transform: scale(1.1);
+  transform: scale(1.02);
+
 }
 
 .overlay {
