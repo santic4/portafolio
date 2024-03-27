@@ -15,4 +15,3 @@ mobileMenuToggle.addEventListener("click", () => {
  mobileMenuToggle.classList.toggle('clicked');
 
 });
-
