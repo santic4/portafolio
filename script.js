@@ -1,17 +1,16 @@
-const enlacePDF = document.getElementById("pdfLink");
-const botonDescargar = document.getElementById("descargarBtn");
+document.addEventListener("DOMContentLoaded", function() {
+  const mobileMenuToggle = document.querySelector(".mobile-menu-toggle");
+  const navLinks = document.querySelector(".nav-links");
 
+  mobileMenuToggle.addEventListener("click", function() {
+    navLinks.classList.toggle("show");
+  });
 
-botonDescargar.addEventListener('click', function() {
-    enlacePDF.click();
-});
+  // Descarga de PDF
+  const descargarBtn = document.getElementById('descargarBtn');
+  const pdfLink = document.getElementById('pdfLink');
 
-const mobileMenuToggle = document.querySelector(".mobile-menu-toggle");
-const navLinks = document.querySelector(".nav-links");
-
-mobileMenuToggle.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
- 
- mobileMenuToggle.classList.toggle('clicked');
-
+  descargarBtn.addEventListener('click', function() {
+    pdfLink.click();
+  });
 });

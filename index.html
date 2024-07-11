@@ -20,34 +20,49 @@
   <header>
     <nav>
       <div class="navbar">
-        
-        <div class="mobile-menu-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <ul class="nav-links">
-          <li class="li-services"><a href="#services">Servicios</a></li>
-          <li><a href="#certificacionesId">Certificados</a></li>
-          <li><a href="#portafolio">Proyectos</a></li>
-          <li><a href="#contact">Contacto</a></li>
-        </ul>
 
-        <div class="logo">
-          <h1>PORTAFOLIO</h1>
+        <div class="left-side-nav">
+
+          <div class="mobile-menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+  
+          <div class="logo">
+            <h1>Santiago Cañu</h1>
+          </div>
+  
         </div>
-        
-        <div class="button-container">
-          <button class="descargar-btn" id="descargarBtn">Curriculum</button>
-          <a href="./fotos/CVFullSanti.pdf" download id="pdfLink" style="display: none;">PDF</a>
+
+        <div class="right-side-nav">
+
+          <ul class="nav-links">
+            <li class="li-services"><a href="#services">Servicios</a></li>
+            <li><a href="#certificacionesId">Certificados</a></li>
+            <li><a href="#portafolio">Proyectos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+  
+          <div class="button-container">
+            <button class="descargar-btn" id="descargarBtn">Curriculum</button>
+            <a href="./fotos/CVFullSanti.pdf" download id="pdfLink" style="display: none;">PDF</a>
+          </div>
+
         </div>
-        </nav>
-</header>
+
+
+
+      </div>
+    </nav>
+
+  </header>
   <main>
 
-    <h1>Santiago Cañu - Full stack developer</h1>
+    <section >
+      <img src="./fotos/fondo-portafolio.png" class="img-left" alt="main-pic"/>
+    </section>
 
-    
 
     <section id="services">
       <h2 class="h2Porta">Servicios</h2>
@@ -56,7 +71,7 @@
           <p>Interfaces de usuario construidas con React.js, HTML5 y CSS3.</p>
       </div>
       <div class="service">
-          <h3>API REST</h3>
+          <h3>Backend</h3>
           <p>Utilizando Node.js, desarrollo de servidor web con Express estructurado en capas e implementación de base de datos.</p>
           <p>Clusters, frameworks de desarrollo NEST.js y WebSockets</p>
         </div>
@@ -76,8 +91,6 @@
 
     <h2 class="h2Porta">Proyectos</h2>
 
-    <h3 class="h3Front">Backend</h3>
-
     <section class="contenedorPadre">
 
       <div class="proyectos proyecto3">
@@ -88,18 +101,20 @@
               <a href="https://github.com/santic4/api49980.git" target="_blank">Ir al repositorio</a>
           </div>
           
-      </div>
-          <div class="iconsLenguajes">
-              <img src="./fotos/passport.png" alt="logohtml">
-              <img src="./fotos/mongodb.png" alt="logocss">
-              <img src="./fotos/javascriptLogo.png" alt="logoreact">
-              <img src="./fotos/nodejs.png" alt="logojs">
-              <h5 class="h5upd">API RESTful para e-commerce: Servidor con Express y una arquitectura en capas, autorización y autenticación de terceros con Passport , base de datos (MongoDB), documentación con Swagger y metodo de pago (Stripe)</h5>
+        </div>
+
+          <div class="iconsLenguajes" >
+             
+            <div class="h5text">
+              <h5>API RESTful para e-commerce: Servidor con Express y una arquitectura en capas, autorización y autenticación de terceros con Passport , base de datos (MongoDB), documentación con Swagger y metodo de pago (Stripe)</h5>
               <h6>Explora el repositorio en GitHub o hace click en la imagen</h6>
             </div>
-          <div class="iconsSocial">
-              <a href="https://github.com/santic4/api49980.git" target="_blank"><img src="./fotos/GitHubLogo.png" alt="githublogo"></a>
-          </div>
+
+            </div>
+
+            <div class="iconsSocial">
+                <a href="https://github.com/santic4/api49980.git" target="_blank"><img src="./fotos/GitHubLogo.png" alt="githublogo"></a>
+            </div>
       </div>
 
 
@@ -110,22 +125,23 @@
               <a href="https://bandorloveshop.netlify.app/" target="_blank">Ir al repositorio</a>
           </div>
           
-      </div>
-          <div class="iconsLenguajes">
-              <img src="./fotos/websockets.png" alt="logoreact">
-              <img src="./fotos/handlebars.webp" alt="logohtml">
-              <img src="./fotos/javascriptLogo.png" alt="logojs">
-              <img src="./fotos/nodejs.png" alt="logocss">
-              <h5 class="h5upd">Aplicacion Chat con websockets, Utilizando Node js y Express para el servidor y Handlebars como motor de plantillas para renderizar las vistas HTML.</h5>
-              <h6>Explora el repositorio en GitHub o hace click en el Gift para ir al Sitio Web</h6>
-            </div>
-          <div class="iconsSocial">
-           
-              <a href="https://github.com/santic4/Chat-WebSocket.git" target="_blank"><img src="./fotos/GitHubLogo.png" alt="githublogo"></a>
-             
-          </div>
-      </div>
+        </div>
 
+        <div class="iconsLenguajes">
+
+          <div class="h5text">
+            <h5>Aplicacion Chat con websockets, Utilizando Node js y Express para el servidor y Handlebars como motor de plantillas para renderizar las vistas HTML.</h5>
+            <h6>Explora el repositorio en GitHub o hace click en la imagen</h6>
+          </div>
+
+          </div>
+        <div class="iconsSocial">
+         
+            <a href="https://github.com/santic4/Chat-WebSocket.git" target="_blank"><img src="./fotos/GitHubLogo.png" alt="githublogo"></a>
+           
+        </div>
+
+      </div>
 
 
       <div class="proyectos proyecto2">
@@ -134,16 +150,16 @@
           <div class="overlay">
               <a href="https://blnews.netlify.app/" target="_blank">Ir al repositorio</a>
           </div>
-      </div>
-          <div class="iconsLenguajes">
-              <img src="./fotos/nest-logo.png" alt="logohtml">
-              <img src="./fotos/mongodb.png" alt="logocss">
-              <img src="./fotos/typescript.png" alt="logojs">
-              <img src="./fotos/nodejs.png" alt="logojs">
-              <h5 class="h5upd">Este es un proyecto base con el framework Nest.js que utiliza MongoDB como base de datos. Proporciona una estructura inicial para desarrollar una aplicación web junto con la base de datos NoSQL MongoDB.</h5>
-              <h6>Explora el repositorio en GitHub o hace click en el Gift para ir al Sitio Web</h6>
+        </div>
 
-          </div>
+          <div class="iconsLenguajes">
+            
+            <div class="h5text">
+              <h5>Este es un proyecto base con el framework Nest.js que utiliza MongoDB como base de datos. Proporciona una estructura inicial para desarrollar una aplicación web junto con la base de datos NoSQL MongoDB.</h5>
+              <h6>Explora el repositorio en GitHub o hace click en la imagen</h6>
+            </div>
+
+      
           <div class="iconsSocial">
 
             <a href="https://github.com/santic4/Proyect-Nest-js.git" target="_blank"><img src="./fotos/GitHubLogo.png" alt="githublogo"></a>
@@ -153,36 +169,36 @@
 
     </section>
 
-
-    <h3 class="h3Front">Front-end</h3>
-
     <section class="contenedorPadre">
 
       <div class="proyectos proyecto3">
-        <div class="gifContainer">
-          <img class="gift" src="./fotos/shopGift.gif" alt="GIF Animado">
+
+        <div class="gifContainer giftContent">
+          <img class="gift" src="./fotos/ecommercejuli.gif" alt="GIF Animado">
           <div class="overlay">
-              <a href="https://marianamc.com/" target="_blank">Ir a la página</a>
-          </div>
-          
-      </div>
+              <a href="https://alfil-digital.onrender.com" target="_blank">Ir a la página</a>
+          </div>  
+        </div>
+
+        <div>
+
           <div class="iconsLenguajes">
-              <img src="./fotos/htmlLogo.png" alt="logohtml">
-              <img src="./fotos/cssLogo.png" alt="logocss">
-              <img src="./fotos/reactLogo.png" alt="logoreact">
-              <img src="./fotos/javascriptLogo.png" alt="logojs">
+            <div class="h5text">
               <h5>Tienda en línea: Productos, Órdenes, Inicio de sesión, Autenticación, Pago, Panel de administrador, Correos electrónicos y diseño personalizado.</h5>
               <h6>Explora el repositorio en GitHub o hace click en el Gift para ir al Sitio Web</h6>
             </div>
-          <div class="iconsSocial">
-           
-              <a href="https://github.com/santic4/bandor-love.git" target="_blank"><img src="./fotos/GitHubLogo.png" alt="githublogo"></a>
-             
           </div>
+
+          <div class="iconsSocial">
+            <a href="https://github.com/santic4/bandor-love.git" target="_blank"><img src="./fotos/GitHubLogo.png" alt="githublogo"></a>    
+          </div>
+
+        </div>
+          
       </div>
 
         <div class="proyectos proyecto1">
-          <div class="gifContainer">
+          <div class="gifContainer giftContent">
             <img class="gift" src="./fotos/eCommerceGift.gif" alt="GIF Animado">
             <div class="overlay">
                 <a href="https://bandorloveshop.netlify.app/" target="_blank">Ir a la página</a>
@@ -190,34 +206,31 @@
             
         </div>
             <div class="iconsLenguajes">
-                <img src="./fotos/htmlLogo.png" alt="logohtml">
-                <img src="./fotos/cssLogo.png" alt="logocss">
-                <img src="./fotos/reactLogo.png" alt="logoreact">
-                <img src="./fotos/javascriptLogo.png" alt="logojs">
+
+              <div class="h5text">
                 <h5>Ecommerce con Firebase: Gestión de Productos, Órdenes de Compra y Almacenamiento en Firestore utilizando HTML5, CSS3, JavaScript y React Js</h5>
                 <h6>Explora el repositorio en GitHub o hace click en el Gift para ir al Sitio Web</h6>
               </div>
-            <div class="iconsSocial">
-             
-                <a href="https://github.com/santic4/bandor-love.git" target="_blank"><img src="./fotos/GitHubLogo.png" alt="githublogo"></a>
-               
             </div>
+
+            <div class="iconsSocial">
+              <a href="https://github.com/santic4/bandor-love.git" target="_blank"><img src="./fotos/GitHubLogo.png" alt="githublogo"></a>
+            </div>
+
         </div>
 
         <div class="proyectos proyecto2">
-          <div class="gifContainer">
+          <div class="gifContainer giftContent">
             <img class="gift" src="./fotos/newsGift.gif" alt="GIF Animado">
             <div class="overlay">
                 <a href="https://blnews.netlify.app/" target="_blank">Ir a la página</a>
             </div>
-        </div>
+          </div>
             <div class="iconsLenguajes">
-                <img src="./fotos/htmlLogo.png" alt="logohtml">
-                <img src="./fotos/cssLogo.png" alt="logocss">
-                <img src="./fotos/javascriptLogo.png" alt="logojs">
-                
+              <div class="h5text">
                 <h5>Plataforma Interactiva de Noticias y Foro Alimentado por una API de Novedades: Explora Información Actualizada. Sitio Desarrollado con HTML5, CSS3 y JavaScript</h5>
                 <h6>Explora el repositorio en GitHub o hace click en el Gift para ir al Sitio Web</h6>
+              </div>
 
             </div>
             <div class="iconsSocial">
@@ -234,26 +247,35 @@
 <h2 class="seccion-titulo h2Porta">Certificaciones</h2>
 
 <section id="certificacionesId" class="certificaciones">
-  
   <div class="certificacion">
-      <h3 class="fontCert">Curso de Desarrollo Web</h3>
-      <p class="fontCert">Certificado en HTML, CSS</p>
-      <a class="fontCert" href="https://www.coderhouse.com/certificados/645cacea4178d8000279bb17" target="_blank">Ver Certificado</a>
+    <h3 class="fontCert">Curso de Desarrollo Web</h3>
+    <p class="fontCert">Certificado en HTML, CSS</p>
+    <button class="fontCert botonCert" onclick="window.open('https://www.coderhouse.com/certificados/645cacea4178d8000279bb17', '_blank')">Ver Certificado</button>
   </div>
   <div class="certificacion">
     <h3 class="fontCert">Curso de JavaScript</h3>
     <p class="fontCert">Certificado JavaScript</p>
-    <a class="fontCert"href="https://www.coderhouse.com/certificados/64a9f6d2ccd0430002f1e843" target="_blank">Ver Certificado</a>
-</div>
-  <div class="certificacion">
-      <h3 class="fontCert">Curso de React</h3>
-      <p class="fontCert">Certificado en React Js.</p>
-      <a class="fontCert" href="https://www.coderhouse.com/certificados/64f7bed86ac60f7c46c33e73" target="_blank">Ver Certificado</a>
+    <button class="fontCert botonCert" onclick="window.open('https://www.coderhouse.com/certificados/64a9f6d2ccd0430002f1e843', '_blank')">Ver Certificado</button>
   </div>
   <div class="certificacion">
-      <h3 class="fontCert">Carrera de Desarrollo Front End </h3>
-      <p class="fontCert">Certificado en Desarrollo Front End </p>
-      <a class="fontCert"href="https://www.coderhouse.com/certificados/64f7bed96ac60f1ab6c33e75" target="_blank">Ver Certificado</a>
+    <h3 class="fontCert">Curso de React</h3>
+    <p class="fontCert">Certificado en React Js.</p>
+    <button class="fontCert botonCert" onclick="window.open('https://www.coderhouse.com/certificados/64f7bed86ac60f7c46c33e73', '_blank')">Ver Certificado</button>
+  </div>
+  <div class="certificacion">
+    <h3 class="fontCert">Carrera de Desarrollo Front End</h3>
+    <p class="fontCert">Certificado en Desarrollo Front End</p>
+    <button class="fontCert botonCert" onclick="window.open('https://www.coderhouse.com/certificados/64f7bed96ac60f1ab6c33e75', '_blank')">Ver Certificado</button>
+  </div>
+  <div class="certificacion">
+    <h3 class="fontCert">Carrera de Desarrollo Full Stack</h3>
+    <p class="fontCert">Certificado en Desarrollo Full Stack</p>
+    <button class="fontCert botonCert" onclick="window.open('https://www.coderhouse.com/ar/certificados/663151d8e45afa0019264b8b/?lang=es', '_blank')">Ver Certificado</button>
+  </div>
+  <div class="certificacion">
+    <h3 class="fontCert">Curso Desarrollo Backend</h3>
+    <p class="fontCert">Certificado en Desarrollo Front End</p>
+    <button class="fontCert botonCert" onclick="window.open('https://www.coderhouse.com/ar/certificados/6622bd0bdc75eab8c9406a94/?lang=es', '_blank')">Ver Certificado</button>
   </div>
 </section>
 
@@ -272,17 +294,21 @@
   </div>
   
   <div class="social-logo">
-  <a class="gitLogo" href="https://github.com/santic4" target="_blank"><img src="./fotos/GitHubLogo.png" alt="ghlogo"></a>
-  <a class="gitLogo" href="https://www.linkedin.com/in/santiago-ca%C3%B1u-3058ba152/" target="_blank"><img src="./fotos/linkedinLogo.webp" alt="lklogo" class="lkdLogo"></a>
+    <a class="gitLogo" href="https://github.com/santic4" target="_blank"><img src="./fotos/GitHubLogo.png" alt="ghlogo"></a>
+    <a class="gitLogo" href="https://www.linkedin.com/in/santiago-ca%C3%B1u-3058ba152/" target="_blank"><img src="./fotos/linkedinLogo.webp" alt="lklogo" class="lkdLogo"></a>
   </div>
 </section>
 
 </main>
 
   <footer>
-    <p>&copy; 2024 Santiago Cañu. Todos los derechos reservados.</p>
+    <div class="footerContainer">
+      <p>&copy; 2024 Santiago Cañu. Todos los derechos reservados.</p>
+    </div>
   </footer>
  
   <script src="./script.js"></script>
+
 </body>
 </html>
+
