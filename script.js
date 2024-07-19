@@ -13,4 +13,10 @@ document.addEventListener("DOMContentLoaded", function() {
   descargarBtn.addEventListener('click', function() {
     pdfLink.click();
   });
+
+  const pdfLinkEsp = document.getElementById('pdfLinkEsp');
+
+  descargarBtn.addEventListener('click', function() {
+    pdfLinkEsp.click();
+  });
 });
