@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
     pdfLink?.click();
   });
 
-  const descargarBtnEsp = document.getElementById('descargar-btn-esp');
+  const descargarBtnEsp = document.getElementById('descargarBtnEsp');
   const pdfLinkEsp = document.getElementById('pdfLinkEsp');
 
   descargarBtnEsp?.addEventListener('click', function() {
