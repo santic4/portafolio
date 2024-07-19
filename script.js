@@ -10,13 +10,14 @@ document.addEventListener("DOMContentLoaded", function() {
   const descargarBtn = document.getElementById('descargarBtn');
   const pdfLink = document.getElementById('pdfLink');
 
-  descargarBtn.addEventListener('click', function() {
-    pdfLink.click();
+  descargarBtn?.addEventListener('click', function() {
+    pdfLink?.click();
   });
 
+  const descargarBtnEsp = document.getElementById('descargar-btn-esp');
   const pdfLinkEsp = document.getElementById('pdfLinkEsp');
 
-  descargarBtn.addEventListener('click', function() {
-    pdfLinkEsp.click();
+  descargarBtnEsp?.addEventListener('click', function() {
+    pdfLinkEsp?.click();
   });
 });
